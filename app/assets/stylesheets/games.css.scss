@@ -1,0 +1,109 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#render_table, tr, td {
+	border: 1px solid black;
+}
+
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+.chessboard {
+	margin: none;
+	border-spacing: 0;
+	table {
+		margin: none;
+	}
+
+	td {
+		height: 100px;
+		width: 100px;
+		margin: none;
+		border-spacing: 0;
+	}
+
+	.white {
+		background-color: #fff;
+	}
+
+	.black {
+		background-color: #000;
+	}
+}
+
+
+$piece_size: 100px;
+
+.board, td, th {
+  border: 1px solid black;
+}
+
+.board {
+  border-spacing: 0;
+  border: 3px grey;
+  border-style: outset;
+
+}
+
+.board td, th {
+
+  height: $piece_size;
+  width: $piece_size;
+  padding: 0;
+
+}
+
+.white_sq {
+  background-color: white;
+}
+
+.dark_sq {
+  background-color: rgb(113, 97, 72);
+}
+
+.moved_sq {
+  background-color: rgb(23, 255, 54);
+}
+
+.piece {
+  border-radius: 50%;
+  width: $piece_size;
+  line-height: $piece_size;
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+}
+
+.white_piece {
+  background-color: rgb(189, 168, 92);
+  border-color: 1px black;
+}
+
+.dark_piece {
+  background-color: rgb(31, 24, 9);
+  color: white;
+  border-color: 1px white;
+}

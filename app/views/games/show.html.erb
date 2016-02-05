@@ -1,0 +1,28 @@
+<h1>Game show page</h1>
+<br />
+<div class="containter">
+	<table class="board" id="chessboard">
+		<tbody>
+			<% (1..8).each do |row_num| %>
+				<tr>
+					<% (1..8).each do |cell_num| %>
+						<% id = row_num + cell_num %>
+						<% if row_num % 2 == cell_num % 2 %>
+							<td id="#{id}" class="white_sq ui-droppable">
+								<% if row_num == 2 || row_num == 7 %>
+									<%= image_tag 'pawn.png', class: "piece" %>
+								<% end %>
+							</td>
+						<% else %>
+							<td id="#{id}" class="dark_sq ui-droppable">
+								<% if row_num == 2 || row_num == 7 %>
+									<%= image_tag 'pawn.png', class: "piece" %>
+								<% end %>
+							</td>
+						<% end %>
+					<% end %>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
